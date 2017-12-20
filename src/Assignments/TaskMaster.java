@@ -410,11 +410,9 @@ public class TaskMaster extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error - Must enter all information");
             return;
         }
-        if (tottask > 0) {
-
-        }
+       
         li.add(t);
-        li.next();
+        li.previous();
         tottask++;
         lblttask.setText("" + tottask);
         lblctask.setText("" + curtask);

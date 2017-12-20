@@ -74,7 +74,7 @@ public class ListIteratorExample {
         pos++;
         showList();
     //move 14
-        System.out.println("Trtying to move past the end of the list");
+        System.out.println("Trying to move past the end of the list");
         try{
             li.next();
         }catch (Exception e){
