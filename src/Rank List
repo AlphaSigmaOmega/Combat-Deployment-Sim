@@ -1,0 +1,36 @@
+S++
+S+
+S
+A++
+A+
+A
+B
+C
+D
+E
+
+
+
+//REFERENCE POINT//
+//==============//
+//Use AP System for fighting ability
+/*
+Ability points (AP). 
+Non-story criitical staff or unique staff (such as Hideo) are
+generated with a set of points in each area (see section 3 for 
+how they are generated). If these points exceed a certain threshold 
+the staff gets assigned that rank in that field. Unfortunately the 
+game does not present us with a clear number next to each of the 
+bars but with some data mining the numbers can be found: 
+E: 1-15
+D: 16-31
+C: 32-47
+B: 48-63
+A: 64-79
+A+: 80-109
+A++: 110-184
+S: 185-289
+S+: 290-447
+S++: 448+
+*/
+
