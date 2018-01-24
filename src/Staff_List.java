@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
-
+//CHILD CLASS//
 //Keeps track of each Staff Member on the FOB & their respective Rank
 public class Staff_List extends FOB_Management {
 
@@ -42,6 +42,10 @@ public class Staff_List extends FOB_Management {
     }
     public int getFightAbility(){
         return FA;
+    }
+    public void setRank(String rank){
+        Rank.equals(rank);
+        
     }
 
     //Looks through txt file and picks random line to assign as name

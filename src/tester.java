@@ -10,11 +10,11 @@ public class tester {
        }
 
     public static void test() {
-        for (int i = 0; i < 100; i++) {
+        /*for (int i = 0; i < 100; i++) {
             Staff_List x = new Staff_List();
             System.out.println(x.toString());
             System.out.println("\n");
-        }
+        }*/
         
     }
     
