@@ -10,14 +10,15 @@ public class Staff_List extends FOB_Management {
 
     private String FName;
     private String LName;
+    private String Name;
     private String Rank;
+    private String ERank="E";
     private int FA=0;
     private Random rand = new Random();
 
     public Staff_List() {
-        pickFName();
-        pickLName();
-        pickRank();
+        pickName();
+        setRank(ERank);
         Fight_Ability(Rank);
     }
 
@@ -49,7 +50,7 @@ public class Staff_List extends FOB_Management {
     }
 
     //Looks through txt file and picks random line to assign as name
-    private void pickFName() {
+    private void pickName() {
         try {
             FileReader fr = new FileReader("FirstNames.txt");
             BufferedReader br = new BufferedReader(fr);
@@ -64,9 +65,6 @@ public class Staff_List extends FOB_Management {
             FName = randName;
         } catch (Exception e) {
         }
-    }
-
-    private void pickLName() {
         try {
             FileReader fr = new FileReader("LastNames.txt");
             BufferedReader br = new BufferedReader(fr);
@@ -81,6 +79,9 @@ public class Staff_List extends FOB_Management {
             LName = randName;
         } catch (Exception e) {
         }
+        FName += " " + LName;
+        Name=FName;
+        
     }
 
     private void pickRank() {
